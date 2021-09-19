@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+<div class="history-page">
+    <div class="history-header">
+        <h1>TRANSACTION HISTORY</h1>
+    </div>
+    
+    <table class="history-table">
+        <tr class ="header1">
+            <th>S.No.</th>
+            <th>Sender</th>
+            <th>Reciever</th>
+            <th>Amount</th>
+        </tr>
+
+    <% for(let transaction of transactions){ %>
+        <tr class ="header2">
+            <td><%= transaction.sno %></td>
+            <td><%= transaction.fromName %></td>
+            <td><%= transaction.toName %></td>
+            <td><%= transaction.transfer %></td>
+        </tr>
+<% } %>
+    </table>
+</div>
+<%- include("partials/footer") %>

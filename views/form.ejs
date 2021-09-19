@@ -1,0 +1,32 @@
+<%- include("partials/header") %>
+
+<div class='form-container'>
+	<div class="form-box">
+
+        <div class="form-body">
+            <div class="sender">
+                <h1>Sender </h1>
+                <h3>Customer Name : <%= fromUser.name %></h3>
+                <h3>Balance = <%= fromUser.balance %></h3>  
+            </div>
+            <div class="receiver">
+                <h1>Receiver </h1>
+                <h3>Customer Name : <%= toUser.name %></h3>
+                <h3>Balance = <%= toUser.balance %></h3>
+            </div>
+        </div>  
+        <div class="form">
+            <form action="/view/<%= fromUser.aid %>/<%= toUser.aid %>?_method=PUT" method="POST">
+                <label for="balance" class="form-paid">Amount to be transferred :</label>
+                <div class="form-amount">
+                    <input type="number" id="balance" name="balance" placeholder=""
+                    value="">
+                    <button class="form-btn">Transfer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+	
+
+<%- include("partials/footer") %>

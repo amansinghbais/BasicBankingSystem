@@ -1,0 +1,32 @@
+<%- include("partials/header") %>
+
+<div class="customers-page">
+
+	<h1 class="customer-header">Customer Details</h1>
+	
+	<table class="customers-table">
+		<thead class="customer-h1">
+			<tr>
+				<th>Account No.</th>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Balance</th>
+			</tr>
+		</thead>
+		<% for(let user of users){ %>
+			<tbody class="customer-h2">
+			   <tr>
+				   <td><%= user.aid %></td>
+				   <td><%= user.name %></td>
+				   <td><%= user.email%></td>
+				   <td><%= user.balance%></td>
+					<td><button class="customer-btn"><a href="/view/<%= user.aid %>">Transfer</a></button></td>
+			   </tr> 
+	   		</tbody>
+			<% } %>
+	</table>
+
+</div>
+            
+        
+<%- include("partials/footer") %>
