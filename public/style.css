@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+:root{
+	font-size: 1rem;
+}
 
 *{
 	margin:0;
@@ -341,4 +344,39 @@
 	font-size: 1.5rem;
 	padding: 1rem;
 	background-color: blue;
+}
+
+
+@media screen and (max-width: 750px) {
+	:root{
+		font-size: 0.8rem;
+	}
+}
+@media screen and (max-width: 630px) {
+	:root{
+		font-size: 0.6rem;
+	}
+	.transfer-h1 th , .transfer-h2 td{
+		padding: 0.5rem 0.3rem;
+	}
+	.customer-h1 tr th{
+		padding: 0.5rem 0.3rem;
+	}
+	.customer-h2 tr td{
+		padding: 0.5rem 0.3rem;
+		
+	}
+	.customer-btn{
+		border: none;
+		outline: none;
+		background-color: black;
+		padding: 0.5rem 0.3rem;
+		border-radius: 6px;
+	}
+
+}
+@media screen and (max-width: 455px) {
+	:root{
+		font-size: 0.5rem;
+	}
 }
