@@ -81,7 +81,7 @@ app.put("/view/:id1/:id2", async(req, res) =>{
         newTransaction.transfer = balance;
         await newTransaction.save();
         i++;
-        res.redirect("/view");
+        res.redirect("/");
     }
     else{
         res.render('error');
