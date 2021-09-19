@@ -10,50 +10,65 @@ mongoose.connect(process.env.DATABASE, {
 
 const seedUsers = [
     {
-        name: 'Shivani',
-        email: 'shivani80@gmail.com',
-        credits: 10000
-    },
-    {
-        name: 'Bobby',
-        email: 'booby199@gmail.com',
-        credits: 7000
-    },
-    {
-        name: 'Yashi',
-        email: 'yashi@gmail.com',
-        credits: 4500
-    },
-    {
-        name: 'Vaibhavi',
-        email: 'ios@yahoo.com',
-        credits: 8600
-    },
-    {
-        name: 'Kunika',
-        email: 'kunika@gmail.com',
-        credits: 7500
-    },
-    {
-        name: 'Rewa',
-        email: 'rewa@yahoo.com',
-        credits: 6900
-    },
-    {
-        name: 'Karimi',
-        email: 'karimi09@gmail.com',
-        credits: 3000
-    },
-    {
+	aid: '2345',
         name: 'Aman',
-        email: 'aman32@yahoo.com',
-        credits: 2100
+        email: 'singhaman@gmail.com',
+        balance: 37000
     },
     {
-        name: 'Vijeta',
-        email: 'vijeta87@gmail.com',
-        credits: 5300
-	}
+	aid: '1975',
+	name: 'Rahul',
+	email: 'rahu@gmail.com',
+	balance: 35000
+    },
+    {
+	aid: '3423',
+	name: 'Rocky',
+	email: 'rocky@gmail.com',
+	balance: 20000
+    },
+    {
+	aid: '1111',
+	name: 'Rishi',
+	email: 'rishi@gmail.com',
+	balance: 40000
+    },
+    {
+	aid: '3489',
+	name: 'Jay',
+	email: 'jay@gmail.com',
+	balance: 26000
+    },
+    {
+	aid: '3119',
+	name: 'Joe',
+	email: 'joe@gmail.com',
+	balance: 25000
+    },
+    {
+	aid: '6129',
+	name: 'Charles',
+	email: 'charles@gmail.com',
+	balance: 25000
+    },
+    {
+	aid: '1345',
+	name: 'Vinay',
+	email: 'vinay@gmail.com',
+	balance: 45000
+    },
+    {
+	aid: '9239',
+	name: 'Vijay',
+	email: 'vijaysingh@gmail.com',
+	balance: 38000
+    },
+    {
+	aid: '1890',
+	name: 'Rock',
+	email: 'rock12@gmail.com',
+	balance: 25000
+    }
 ]
 
 User.insertMany(seedUsers)
