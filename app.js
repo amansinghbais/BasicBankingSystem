@@ -10,7 +10,6 @@ const Transaction = require('./models/transaction');
 
 let i = 3;
 
-require('./seeds')
 require('dotenv').config();
 
 const DB = process.env.DATABASE;
@@ -23,6 +22,9 @@ mongoose.connect(DB,{
 })
 .then(() => console.log('Connected to DB!'))
 .catch(error => console.log(error.message)); 
+
+
+require('./seeds');
 
 app.set('views',path.join(__dirname, 'views'));
 app.set('view engine','ejs');
