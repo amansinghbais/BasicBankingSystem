@@ -10,6 +10,7 @@ const Transaction = require('./models/transaction');
 
 let i = 3;
 
+require('./seeds')
 require('dotenv').config();
 
 const DB = process.env.DATABASE;
