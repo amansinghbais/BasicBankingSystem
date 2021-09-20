@@ -8,7 +8,7 @@ const methodOverride =require('method-override');
 const User = require('./models/user');
 const Transaction = require('./models/transaction');
 
-let i = 3;
+let i = 1;
 
 require('dotenv').config();
 
