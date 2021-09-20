@@ -15,7 +15,7 @@ How to Use:
 
 -First clone this repository in your local system using git clone and then in terminal/powershell or any command line tool enter npm install to install all the dependencies.
 -After all this create your local environment(.env file) and save PORT no. and a link to connect to your Mongodb Atlas Database.
--Using seed.js file you can save dummy data in your database OR you can also use your own data to be saved in mondodb database.
+-Using seed.js file you can save dummy data in your database by requiring seed.js file in app.js OR you can also use your own data to be saved in mondodb database.
 
 DataBase Contains two Model:
 1) Users Table : have fields such as aid , name , email ,  balance.
